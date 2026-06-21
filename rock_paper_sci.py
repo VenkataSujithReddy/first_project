@@ -9,18 +9,18 @@ while True:
         break 
     
      if choice == "y":
-        computer = random.choice(["r", "p" , "s"])
-     player = input("Choose (r/p/s): ").lower()
+        computer = random.choice(["rock", "p" , "s"])
+     player = input("Choose (rock/p/s): ").lower()
 
-     if player not in ["r", "p", "s"]:
+     if player not in ["rock", "p", "s"]:
             print("Invalid input")
             continue
      if computer == player:
         print("this was a tie")
 
      elif (
-    (player == "r" and computer == "s") or
-    (player == "p" and computer == "r") or
+    (player == "rock" and computer == "s") or
+    (player == "p" and computer == "rock") or
     (player == "s" and computer == "p")
 ):
       print("You win!")
